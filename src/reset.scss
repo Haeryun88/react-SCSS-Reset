@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 200;
+  src: url(../fonts/NotoSansKR/NotoSansKR-Light.woff) format('woff'),
+    url(../fonts/NotoSansKR/NotoSansKR-Light.woff2) format('woff2'),
+    url(../fonts/NotoSansKR/NotoSansKR-Light.otf) format('otf');
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 400;
+  src: url(../fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff'),
+    url(../fonts/NotoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSansKR/NotoSansKR-Regular.otf) format('otf');
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 500;
+  src: url(../fonts/NotoSansKR/NotoSansKR-Medium.woff) format('woff'),
+    url(../fonts/NotoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSansKR/NotoSansKR-Medium.otf) format('otf');
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 700;
+  src: url(../fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff'),
+    url(../fonts/NotoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSansKR/NotoSansKR-Bold.otf) format('otf');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: -apple-system-body;
+  font-family: 'NotoSansKR', '맑은 고딕', -apple-system-body,
+    'Apple SD Gothic Neo', 'Apple Gothic', '돋움', sans-serif; /*font: -apple-system-body;*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NotoSansKR', '맑은 고딕', 'Apple Gothic', '돋움', sans-serif; /*font: -apple-system-body;*/
+  outline: none;
+  font-weight: inherit;
+  list-style: none;
+  font-style: normal;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  box-shadow: transparent;
+  border-radius: 0;
+  color: #111111;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+button:active,
+button:hover {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  border: 0;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: inherit;
+  border-spacing: 0;
+}
+.hide {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+/* 20220614 추가*/
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+/**:focus{outline:2px solid red;}*/
+html {
+  font-size: 10.2px;
+}
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 7.77px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 320px) {
+  html {
+    font-size: 7.77px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  html {
+    font-size: 8.88px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  html {
+    font-size: 10.2px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  html {
+    font-size: 10.41px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 540px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 667px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+  html {
+    font-size: 18.52px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 834px) {
+  html {
+    font-size: 21.33px;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  html {
+    font-size: 23.16px;
+  }
+}
+
+/* 가로모드 */
+@media screen and (orientation: landscape) {
+  html {
+    font-size: 17.37px;
+  }
+}
+
+@media screen and (max-device-width: 1112px) and (orientation: landscape) {
+  /* iPad Pro 10 */
+  html {
+    font-size: 17.37px;
+  }
+}
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  /* iPad Air, iPad Mini, iPad Pro 9 */
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-device-width: 914px) and (orientation: landscape) {
+  html {
+    font-size: 14.28px;
+  }
+}
+@media screen and (max-device-width: 844px) and (orientation: landscape) {
+  html {
+    font-size: 13.18px;
+  }
+}
+@media screen and (max-device-width: 736px) and (orientation: landscape) {
+  /* iPhone 6 Plus */
+  html {
+    font-size: 11.5px;
+  }
+}
+@media screen and (max-device-width: 667px) and (orientation: landscape) {
+  /* iPhone 6, 7, 8, X */
+  html {
+    font-size: 10.42px;
+  }
+}
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  /* Galaxy S5 */
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-device-width: 592px) and (orientation: landscape) {
+  /*LG Nexus 5*/
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-device-width: 568px) and (orientation: landscape) {
+  /*iPhone 5*/
+  html {
+    font-size: 9.25px;
+  }
+}
+@media screen and (max-device-width: 534px) and (orientation: landscape) {
+  /*Galaxy S2*/
+  html {
+    font-size: 8.87px;
+  }
+}
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+  /*iPhone 4*/
+  html {
+    font-size: 7.5px;
+  }
+}
